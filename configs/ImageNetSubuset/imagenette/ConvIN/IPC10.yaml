@@ -1,0 +1,35 @@
+dataset: ImageNet
+res: 128
+subset: imagenette
+model: ConvNetD5
+device: [0,1,2,3]
+
+ipc: 10
+syn_steps: 40
+expert_epochs: 2
+zca: False
+lr_img: 100000
+lr_teacher: 0.01
+buffer_path: ../buffer_storage
+data_path: /home/guoziyao/Gzy/imagenet
+ema_decay: 0.995
+Iteration: 10000
+
+# wandb
+project: imagenette_ipc10
+
+num_eval: 1
+eval_it: 500
+skip_first_eva: True
+
+lr_y: 5.0
+Momentum_y: 0.9
+threshold: 2.
+pix_init: samples_predicted_correctly
+learn_end_epoch: 1
+batch_train: 128
+min_start_epoch: 0
+Initial_Step: 8
+max_start_epoch: 10
+lr_lr: 0.000001
+

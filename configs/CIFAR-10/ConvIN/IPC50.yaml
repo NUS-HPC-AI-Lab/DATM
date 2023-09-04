@@ -1,0 +1,38 @@
+dataset: CIFAR10
+# res: 64
+# subset: imagenette
+# model: ConvNetD4
+device: [0,1]
+
+ipc: 50
+syn_steps: 80
+expert_epochs: 2
+zca: False
+lr_img: 1000
+lr_teacher: 0.01
+buffer_path: /cpfs01/shared/public/Gzy/FTD-distillation/buffer_storage/256b_100epoch
+data_path: ../dataset
+ema_decay: 0.995
+Iteration: 10000
+batch_syn: 500
+
+# wandb
+project: ipc50
+
+num_eval: 1
+eval_it: 500
+skip_first_eva: False
+
+lr_y: 2.
+Momentum_y: 0.9
+threshold: 1.
+pix_init: samples_predicted_correctly
+learn_end_epoch: 4000
+batch_train: 128
+min_start_epoch: 0
+Initial_Step: 20
+max_start_epoch: 40
+lr_lr: 0.00001
+zca: True
+
+Label_Model_Timestamp: 60
