@@ -14,3 +14,8 @@ python test.py --cfg xxx.yaml
 Backed up here first
 
 https://drive.google.com/drive/folders/1kZlYgiVrmFEz0OUyxnww3II7FBPQe7W0?usp=sharing
+
+## evaluation
+Use ZCA and batch size 128
+
+Have written an evaluation program, contained in /distill/evaluation.py
