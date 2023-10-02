@@ -1,21 +1,18 @@
-# DD
-## Notation
-I use CFG to convey the value of keywords, which are enrolled in /utils/cfg.py
+# DATM
 
-Preset hyper-parameters are contained in /configs. (Most of them are cleaned).
-
-## run the distillation
+## Getting Started
+1. Create environment
+```
+conda env create -f environment.yaml
+conda activate distillation
+```
+2. Generate expert trajectories
+```
+cd buffer
+python buffer_FTD.py --dataset=CIFAR10 --model=ConvNet --train_epochs=100 --num_experts=100 --zca --buffer_path=../buffer_storage/ --data_path=../dataset/ --rho_max=0.01 --rho_min=0.01 --alpha=0.3 --lr_teacher=0.01 --mom=0. --batch_train=256
+```
+3. Perform the distillation
 ```
 cd distill
-python test.py --cfg xxx.yaml
+python DTAM.py --cfg ../configs/xxxx.yaml
 ```
-
-## distilled datasets
-Backed up here first
-
-https://drive.google.com/drive/folders/1kZlYgiVrmFEz0OUyxnww3II7FBPQe7W0?usp=sharing
-
-## evaluation
-Use ZCA and batch size 128
-
-Have written an evaluation program, contained in /distill/evaluation.py
