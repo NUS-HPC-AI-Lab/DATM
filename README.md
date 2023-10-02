@@ -1,4 +1,6 @@
-# DATM
+# Towards Lossless Dataset Distillation via Difficulty-Aligned Trajectory Matching
+
+[[Project Page]()] [[Paper]()] [[Distilled Datasets]()]
 
 ## Getting Started
 1. Create environment
