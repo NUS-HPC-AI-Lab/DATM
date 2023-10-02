@@ -1,0 +1,32 @@
+dataset: CIFAR100
+device: [0,1,2,3]
+
+ipc: 100
+syn_steps: 80
+expert_epochs: 2
+lr_img: 50
+lr_teacher: 0.01
+buffer_path: ../buffer_storage/
+data_path: ../dataset
+ema_decay: 0.9995
+Iteration: 10000
+batch_syn: 1000
+
+# wandb
+project: CIFAR100_ipc100
+
+num_eval: 1
+eval_it: 500
+skip_first_eva: True
+
+lr_y: 10.0
+Momentum_y: 0.9
+threshold: 1.
+pix_init: samples_predicted_correctly
+Sequential_Generation: False
+batch_train: 128
+min_start_epoch: 30
+max_start_epoch: 70
+lr_lr: 0.00001
+zca: True
+

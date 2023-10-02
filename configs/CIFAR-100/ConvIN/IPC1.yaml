@@ -1,0 +1,35 @@
+dataset: CIFAR100
+model: ConvNet
+device: [0]
+
+ipc: 1
+syn_steps: 40
+expert_epochs: 3
+zca: True
+lr_img: 1000
+lr_teacher: 0.01
+buffer_path: ../buffer_storage
+data_path: ../dataset
+ema_decay: 0.9995
+Iteration: 10000
+batch_syn: 1000
+
+# wandb
+project: CIFAR100_ipc1
+
+num_eval: 1
+eval_it: 500
+skip_first_eva: False
+
+lr_y: 10.0
+Momentum_y: 0.9
+threshold: 1.
+pix_init: samples_predicted_correctly
+expansion_end_epoch: 1000
+batch_train: 128
+min_start_epoch: 0
+current_max_start_epoch: 20
+max_start_epoch: 30
+lr_lr: 0.00001
+
+

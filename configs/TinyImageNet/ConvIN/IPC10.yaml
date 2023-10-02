@@ -1,0 +1,37 @@
+dataset: Tiny
+res: 64
+model: ConvNetD4
+device: [0,1,2,3]
+
+ipc: 10
+syn_steps: 40
+expert_epochs: 2
+lr_img: 100
+lr_teacher: 0.01
+buffer_path: ../buffer_storage/
+data_path: ../dataset/tiny-imagenet-200
+ema_decay: 0.9995
+Iteration: 10000
+batch_syn: 500
+
+# wandb
+project: Tiny_ipc10
+
+num_eval: 1
+eval_it: 500
+skip_first_eva: False
+
+lr_y: 10.0
+Momentum_y: 0.9
+threshold: 1.
+pix_init: samples_predicted_correctly
+batch_train: 128
+
+Sequential_Generation: False
+min_start_epoch: 10
+max_start_epoch: 50
+
+lr_lr: 0.0001
+
+zca: True
+
