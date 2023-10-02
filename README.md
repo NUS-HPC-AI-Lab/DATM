@@ -14,5 +14,5 @@ python buffer_FTD.py --dataset=CIFAR10 --model=ConvNet --train_epochs=100 --num_
 3. Perform the distillation
 ```
 cd distill
-python DTAM.py --cfg ../configs/xxxx.yaml
+python DATM.py --cfg ../configs/xxxx.yaml
 ```
