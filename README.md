@@ -26,3 +26,5 @@ python buffer_FTD.py --dataset=CIFAR10 --model=ConvNet --train_epochs=100 --num_
 cd distill
 python DATM.py --cfg ../configs/xxxx.yaml
 ```
+## Acknowledge
+Our code is built upon [MTT](https://github.com/GeorgeCazenavette/mtt-distillation) and [FTD](https://github.com/AngusDujw/FTD-distillation).
