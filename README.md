@@ -1,6 +1,7 @@
 # Towards Lossless Dataset Distillation via Difficulty-Aligned Trajectory Matching
 
 ## [Project Page]() | [Paper]() | [Distilled Datasets](https://drive.google.com/drive/folders/1kZlYgiVrmFEz0OUyxnww3II7FBPQe7W0)
+Previous dataset distillation methods only work well when IPC is extremely small.
 In this work, we find the difficulty of the generated patterns should be aligned with the size of the synthetic dataset.
 
 What do easy patterns and hard patterns look like?
