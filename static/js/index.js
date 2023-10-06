@@ -18,11 +18,11 @@ function preloadInterpolationImages() {
 
 function setInterpolationImage_early(i) {
   var img = document.getElementById("img_early");
-  img.src = early[i];
+  img.src = early[i]+ "?r=" + Math.random();
 }
 function setInterpolationImage_late(i) {
   var img = document.getElementById("img_late");
-  img.src = late[i];
+  img.src = late[i]+ "?r=" + Math.random();
 }
 
 $(document).ready(function() {
