@@ -1,6 +1,6 @@
 # Towards Lossless Dataset Distillation via Difficulty-Aligned Trajectory Matching
 
-## [Project Page]() | [Paper]() | [Distilled Datasets](https://drive.google.com/drive/folders/1kZlYgiVrmFEz0OUyxnww3II7FBPQe7W0)
+## [Project Page](https://gzyaftermath.github.io/DATM/) | [Paper]() | [Distilled Datasets](https://drive.google.com/drive/folders/1kZlYgiVrmFEz0OUyxnww3II7FBPQe7W0)
 To achieve lossless dataset distillation, an intuitive idea is to increase the size of the synthetic dataset.
 However, previous dataset distillation methods tend to perform worse than random selection as IPC (i.e., data keep ratio) increases.
 
