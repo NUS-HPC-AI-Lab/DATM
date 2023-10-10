@@ -38,5 +38,17 @@ We provide a simple script for evaluating the distilled datasets.
 cd distill
 python evaluation.py --lr_dir=dir_to_lr --data_dir=dir_to_images --label_dir=dir_to_labels --zca
 ```
-## Acknowledge
+## Acknowledgement
 Our code is built upon [MTT](https://github.com/GeorgeCazenavette/mtt-distillation) and [FTD](https://github.com/AngusDujw/FTD-distillation).
+## Citation
+If you find our code useful for your research, please cite our paper.
+```
+@misc{guo2023lossless,
+      title={Towards Lossless Dataset Distillation via Difficulty-Aligned Trajectory Matching}, 
+      author={Ziyao Guo and Kai Wang and George Cazenavette and Hui Li and Kaipeng Zhang and Yang You},
+      year={2023},
+      eprint={2310.05773},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
