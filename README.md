@@ -36,7 +36,7 @@ python DATM.py --cfg ../configs/xxxx.yaml
 We provide a simple script for evaluating the distilled datasets.
 ```
 cd distill
-python evaluation.py --lr_dir=dir_to_lr --data_dir=dir_to_images --label_dir=dir_to_labels --zca
+python evaluation.py --lr_dir=path_to_lr --data_dir=path_to_images --label_dir=path_to_labels --zca
 ```
 ## Acknowledgement
 Our code is built upon [MTT](https://github.com/GeorgeCazenavette/mtt-distillation) and [FTD](https://github.com/AngusDujw/FTD-distillation).
