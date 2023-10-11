@@ -96,8 +96,10 @@ if __name__ == '__main__':
     parser.add_argument('--zca', action='store_true', help="do ZCA whitening")
     parser.add_argument('--lr_teacher', type=float, default=0.01, help='initialization for synthetic learning rate')
     parser.add_argument('--no_aug', type=bool, default=False, help='this turns off diff aug during distillation')
-    
-    
+    parser.add_argument('--batch_train', type=int, default=128, help='batch size for training networks')
+
+    parser.add_argument('--parall_eva', type=bool, default=False, help='dataset')
+
     parser.add_argument('--data_dir', type=str, default='path', help='dataset')
     parser.add_argument('--label_dir', type=str, default='path', help='dataset')
     parser.add_argument('--lr_dir', type=str, default='path', help='dataset')
