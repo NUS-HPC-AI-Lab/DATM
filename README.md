@@ -17,7 +17,7 @@ What do easy patterns and hard patterns look like?
 ![image](figures/visualization_ipc.png)
 
 ## Getting Started
-1. Create environment
+1. Create environment as follows
 ```
 conda env create -f environment.yaml
 conda activate distillation
