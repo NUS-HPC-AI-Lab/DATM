@@ -483,7 +483,7 @@ def main(args):
 
         # Only match easy traj. in the early stage
         if args.Sequential_Generation:
-            Upper_Bound = args.current_max_start_epoch + int((args.max_start_epoch-args.current_max_start_epoch) * it/(args.learn_end_epoch))
+            Upper_Bound = args.current_max_start_epoch + int((args.max_start_epoch-args.current_max_start_epoch) * it/(args.expansion_end_epoch))
             Upper_Bound = min(Upper_Bound, args.max_start_epoch)
         else:
             Upper_Bound = args.max_start_epoch
