@@ -4,7 +4,6 @@ device: [0,1]
 ipc: 50
 syn_steps: 80
 expert_epochs: 2
-zca: False
 lr_img: 1000
 lr_teacher: 0.01
 buffer_path: ../buffer_storage/
