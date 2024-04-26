@@ -4,14 +4,13 @@ device: [3]
 ipc: 10
 syn_steps: 80
 expert_epochs: 2
-zca: False
 lr_img: 100
 lr_teacher: 0.01
 buffer_path: ../buffer_storage/
 data_path: ../dataset
 ema_decay: 0.9995
 Iteration: 10000
-batch_syn: 500
+batch_syn: 100
 
 # wandb
 project: CIFAR10_ipc10
