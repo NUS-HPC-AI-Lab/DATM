@@ -12,7 +12,7 @@ buffer_path: ../buffer_storage/
 data_path: ../dataset
 ema_decay: 0.995
 Iteration: 10000
-batch_syn: 1000
+batch_syn: 10
 
 # wandb
 project: CIFAR10_ipc1
