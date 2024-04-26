@@ -28,8 +28,8 @@ pix_init: samples_predicted_correctly
 expansion_end_epoch: 1000
 batch_train: 128
 min_start_epoch: 0
-current_max_start_epoch: 20
-max_start_epoch: 30
+current_max_start_epoch: 10
+max_start_epoch: 20
 lr_lr: 0.00001
 
 
