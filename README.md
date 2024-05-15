@@ -32,6 +32,8 @@ python buffer_FTD.py --dataset=CIFAR10 --model=ConvNet --train_epochs=100 --num_
 cd distill
 python DATM.py --cfg ../configs/xxxx.yaml
 ```
+`DATM_tesla.py` is a [TESLA](https://github.com/justincui03/tesla) implementation of DATM, which could greatly reduce the VRAM usage, *e.g.* ~12G for CIFAR10 and IPC=1000.
+
 ## Evaluation
 We provide a simple script for evaluating the distilled datasets.
 ```
@@ -39,7 +41,7 @@ cd distill
 python evaluation.py --lr_dir=path_to_lr --data_dir=path_to_images --label_dir=path_to_labels --zca
 ```
 ## Acknowledgement
-Our code is built upon [MTT](https://github.com/GeorgeCazenavette/mtt-distillation) and [FTD](https://github.com/AngusDujw/FTD-distillation).
+Our code is built upon [MTT](https://github.com/GeorgeCazenavette/mtt-distillation), [FTD](https://github.com/AngusDujw/FTD-distillation) and [TESLA](https://github.com/justincui03/tesla).
 ## Citation
 If you find our code useful for your research, please cite our paper.
 ```
