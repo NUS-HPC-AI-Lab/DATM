@@ -16,6 +16,9 @@ What do easy patterns and hard patterns look like?
 
 ![image](figures/visualization_ipc.png)
 
+## News
+16 May. The implementation of DATM_with_[TESLA](https://github.com/justincui03/tesla) is merged. Thanks for the PR from Yue XU!
+
 ## Getting Started
 1. Create environment as follows
 ```
